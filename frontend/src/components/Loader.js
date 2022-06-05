@@ -5,8 +5,9 @@ import React from 'react'
 function Loader() {
     return (
         <Spinner
-            animation='border'
+            animation='grow'
             role='status'
+            variant='info'
             style={{
                 height: '100px',
                 width: '100px',

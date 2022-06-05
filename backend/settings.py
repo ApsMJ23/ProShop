@@ -21,12 +21,12 @@ from decouple import Config, config
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'sc%oco$+(3$z$at=z4j)#l-+ym)+_b11389mdt2^12m$bf63%@';
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','proshop14.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -122,12 +122,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 DATABASES = {
     'default':{
@@ -189,13 +189,10 @@ STATIC_ROOT=BASE_DIR /'staticfiles'
 
 CORS_ALLOW_ALL_ORIGINS=True
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID=config('AWS_ACCESS_KEY')
-AWS_SECRET_ACCESS_KEY=config('AWS_SECRET_KEY')
-AWS_STORAGE_BUCKET_NAME='proshop14-bucket'
-AWS_QUERYSTRING_AUTH=False
+# AWS_ACCESS_KEY_ID=config('AWS_ACCESS_KEY')
+# AWS_SECRET_ACCESS_KEY=config('AWS_SECRET_KEY')
+# AWS_STORAGE_BUCKET_NAME='proshop14-bucket'
+# AWS_QUERYSTRING_AUTH=False
 
 if os.getcwd() == '/app':
     DEBUG = False

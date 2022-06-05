@@ -15,8 +15,8 @@ function Header() {
     dispatch(logout())
   }
   return (
-    <header>
-      <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
+    <header >
+      <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect style={{ boxShadow: '0px 10px 31px -3px rgba(0,0,0,0.75)' }}>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand >ProShop</Navbar.Brand>

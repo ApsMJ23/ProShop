@@ -21,6 +21,8 @@ h3{
 }
 
 
+
+
 /*Carousel*/
 .carousel-item-next,
 .carousel-item-prev,
@@ -46,11 +48,17 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
-
+.prod-card{
+    border-radius: 12px !important;
+    box-shadow: -13px 14px 29px -13px rgba(0,0,0,0.75);;
+    transition: transform 0.1s ease-in 100ms;
+}
+.prod-card:hover{
+    transform: scale(1.1);
+}
 .carousel a{
     margin: 0 auto;
 }
-
 @media (max-width:900px){
     .carousel-caption h2{
         font-size: 2.5vw;

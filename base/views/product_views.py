@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAuthenticated,IsAdminUser
 from rest_framework.response import Response
 from django.core.paginator import Page, Paginator,EmptyPage,PageNotAnInteger
 
-from rest_framework_simplejwt.state import User
+# from rest_framework_simplejwt.state import User
 from django.contrib.auth.hashers import make_password
 from ..models import Product, Review
 from ..serializer import ProductSerializer
